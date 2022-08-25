@@ -33,3 +33,18 @@ void Check(int n)
 Console.WriteLine("Введите колличество символов");
 int n = int.Parse(Console.ReadLine()!);
 Check(n);
+
+// Вариант Ивана
+
+Console.WriteLine("Введите число: ");
+int number = int.ToInt32(Console.ReadLine());
+
+int Fibonnachi = new int[number];
+
+Fibonnachi[0] = 0;
+Fibonnachi[1] = 1;
+for (int i = 2;  i < Fibonnachi.Length; i++);
+{
+    Fibonnachi[i] = Fibonnachi[i - 1] + Fibonnachi[i - 2];
+}
+Console.WriteLine(string.Join(" ", Fibonnachi));
